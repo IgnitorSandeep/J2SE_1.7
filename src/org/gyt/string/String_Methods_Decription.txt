@@ -1,0 +1,15 @@
+																		
+#############################################################################################################################################
+											The regionMatches() Methods and Descriptions
+																		
+#############################################################################################################################################
+#								Method 							#							Description										#
+#############################################################################################################################################						
+# boolean regionMatches(int start, String matchingStr,			#		Starting from start in this String object, check if the region		#
+# int matchStartOffset,int matchLen)							#		of text given by matchingStr matches. In matchStr, check for		#
+#																#		matchLen characters starting from matchStartOffset.					#																												
+#############################################################################################################################################																																
+# boolean regionMatches(boolean ignoreCase,						#		Same as the previous method, but with the additional firs			#
+# int start, String matchingStr,								#																			#
+# int matchStartOffset, int matchLen)							#																			#
+#############################################################################################################################################																			
