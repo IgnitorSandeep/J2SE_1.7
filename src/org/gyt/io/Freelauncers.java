@@ -39,14 +39,14 @@ public class Freelauncers {
 		}
 	}
 
+
 	public static int isBestAssignmentPossible(String inputcases,int launcers) {
 		int isPossible = 0;
 		
 		String preferences[] = inputcases.split("\n");
 		for(String a:preferences){
 			String a1[] = a.split(" ");
-			@SuppressWarnings("unused")
-			int taskcandone=Integer.parseInt(a1[1]);
+			Integer.parseInt(a1[1]);
 			
 		}
 		return isPossible;
