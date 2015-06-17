@@ -1,7 +1,5 @@
 package org.gyt.design.singleton.multithreading.singlelock;
 
-import org.gyt.design.singleton.singlethread.SingleObject;
-
 /*
  * This class's instance can be created only once.
  */

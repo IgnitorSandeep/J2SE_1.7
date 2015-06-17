@@ -7,6 +7,7 @@ public class ReflexExample {
 	 */
 	public static void main(String[] args) {
 
+		@SuppressWarnings("rawtypes")
 		Class c1 = "foo".getClass();
 		System.out.println("\"foo\" class name : "+c1.getName());
 		

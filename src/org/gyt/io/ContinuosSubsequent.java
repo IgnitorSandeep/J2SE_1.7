@@ -1,6 +1,5 @@
 package org.gyt.io;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ContinuosSubsequent {
@@ -13,6 +12,7 @@ public class ContinuosSubsequent {
 		int testcases;
 		int startcase;
 
+		@SuppressWarnings("resource")
 		Scanner sc= new Scanner(System.in);
 	
 		testcases = sc.nextInt();
@@ -20,6 +20,7 @@ public class ContinuosSubsequent {
 
 		for (int i = 0; i < testcases; i++) {
 			startcase = sc.nextInt();
+			@SuppressWarnings("unused")
 			String caseString = "";
 			for (int j = 0; j <= startcase; j++) {
 				caseString += sc.nextLine();

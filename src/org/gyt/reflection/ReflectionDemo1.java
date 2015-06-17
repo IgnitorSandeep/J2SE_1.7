@@ -7,6 +7,7 @@ public class ReflectionDemo1 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		@SuppressWarnings("rawtypes")
 		Class c = null;
 		
 		c = Thread.State.class.getEnclosingClass();

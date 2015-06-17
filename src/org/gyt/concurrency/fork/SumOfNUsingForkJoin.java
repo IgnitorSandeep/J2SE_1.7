@@ -16,6 +16,10 @@ class SumOfNUsingForkJoin {
 	// instead of RecursiveAction since we're returning values.
 
 	static class RecursiveSumOfN extends RecursiveTask<Long> {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		long from, to;
 
 		// from and to are range of values to sum-up
@@ -73,6 +77,7 @@ class SumOfNUsingForkJoin {
 		long computedSum = pool.invoke(new RecursiveSumOfN(0, N));
 		long stop = System.nanoTime();
 		// this is the formula sum for the range 1..N
+		@SuppressWarnings("unused")
 		long formulaSum = (N * (N + 1)) / 2;
 		// Compare the computed sum and the formula sum
 		System.out.printf(

@@ -8,6 +8,7 @@ public class Freelauncers {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
 		int testcases;
@@ -44,6 +45,7 @@ public class Freelauncers {
 		String preferences[] = inputcases.split("\n");
 		for(String a:preferences){
 			String a1[] = a.split(" ");
+			@SuppressWarnings("unused")
 			int taskcandone=Integer.parseInt(a1[1]);
 			
 		}
