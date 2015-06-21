@@ -1,8 +1,8 @@
-package org.gyt.hackerrank;
+package org.gyt.hackerrank.fibonacci_modified;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class FibonacciModified {
+public class Solution {
    
 		static String solution[] =new String[20];
 	
