@@ -14,6 +14,7 @@ public class Solution {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line = br.readLine();
+		@SuppressWarnings("unused")
 		int n = Integer.parseInt(line.split(" ")[0]);
 		int m = Integer.parseInt(line.split(" ")[1]);
 		List<Integer> list = null;
