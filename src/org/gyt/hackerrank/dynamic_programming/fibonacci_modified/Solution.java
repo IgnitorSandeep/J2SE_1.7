@@ -1,4 +1,4 @@
-package org.gyt.hackerrank.fibonacci_modified;
+package org.gyt.hackerrank.dynamic_programming.fibonacci_modified;
 import java.math.BigInteger;
 import java.util.Scanner;
 

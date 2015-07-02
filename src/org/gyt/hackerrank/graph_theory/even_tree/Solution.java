@@ -1,4 +1,4 @@
-package org.gyt.hackerrank.even_tree;
+package org.gyt.hackerrank.graph_theory.even_tree;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
