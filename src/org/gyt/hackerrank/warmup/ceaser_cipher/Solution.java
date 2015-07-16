@@ -30,6 +30,9 @@ public class Solution {
 
 		String cipherText = getCipther(input, key, length);
 		System.out.println(cipherText);
+		
+		scanner.close();
+		
 	}
 
 	private static String getCipther(String input, int key, int lenght) {
