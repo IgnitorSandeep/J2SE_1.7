@@ -125,13 +125,13 @@ public class Solution {
 		while(T>0){
 			int k = scanner.nextInt();
 			
-			int itr = 2;
+			int itr = 1;
 			
-			int currLevel = k;
+			int currLevel=k;
 			
 			while (currLevel <= level) {
-				swapOperation(root, currLevel);
 				currLevel = itr*k;
+				swapOperation(root, currLevel);
 				itr++;
 			}
 			inorder(root);
