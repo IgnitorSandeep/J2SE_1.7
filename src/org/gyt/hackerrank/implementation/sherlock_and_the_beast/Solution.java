@@ -4,21 +4,28 @@ import java.util.Scanner;
 
 public class Solution {
 
-	static String possibleKey(int num ){
-		char array[]=new char[num];
-		while(num>0){
-			if(num%5==0) {
-				for(int i=0;i<num;i++) {
-					array[i] = '5';
-				}
-			} else if(num%3==0) {
-				for(int i=0;i<num;i++) {
-					array[i] = '3';
-				}
+	static String strFromDigit(int n, int len) {
+		StringBuilder s = new StringBuilder();
+		while (len > 0) {
+			s.append(n);
+			len--;
+		}
+		return s.toString();
+	}
+
+	static void buildString(int num ){
+		String str = "";
+		for(int j = num;j>=0;j--)
+		{
+			if(j%3==0 && (num-j)%5==0){
+				str = strFromDigit(5,j)+strFromDigit(3, (num-j));
+				break;
 			}
 		}
-
-		return null;
+		if(str=="")
+			System.out.println("-1");
+		else
+			System.out.println(str);
 	}
 
 	public static void main(String[] args) {
@@ -27,11 +34,7 @@ public class Solution {
 		tcCount = scanner.nextInt();
 		for (int i = 0; i < tcCount; i++) {
 			int length = scanner.nextInt();
-			String key = possibleKey(length);
-			if (key != null)
-				System.out.println(key);
-			else
-				System.out.println("-1");
+			buildString(length);
 		}
 		scanner.close();
 	}
